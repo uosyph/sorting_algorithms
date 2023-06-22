@@ -3,7 +3,7 @@
 /**
  * insertion_sort_list - Sorts a doubly linked list of integers
  * in ascending order using the Insertion sort algorithm.
- * @list: The array to be printed
+ * @list: The array to be sorted
  */
 void insertion_sort_list(listint_t **list)
 {

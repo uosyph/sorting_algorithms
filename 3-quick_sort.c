@@ -5,7 +5,7 @@
  * @array: The array to be partitioned
  * @low: Low index
  * @high: High index
- * @size: Number of elements in @array
+ * @size: Size of @array
  * Return: The partitioned array
  */
 int partition(int *array, int low, int high, size_t size)
@@ -47,7 +47,7 @@ int partition(int *array, int low, int high, size_t size)
  * @array: The array to be sorted
  * @low: Low index
  * @high: High index
- * @size: Number of elements in @array
+ * @size: Size of @array
  */
 void sorting(int *array, int low, int high, size_t size)
 {
@@ -63,8 +63,8 @@ void sorting(int *array, int low, int high, size_t size)
 /**
  * quick_sort - Sorts an array of integers in
  * ascending order using the Quick sort algorithm.
- * @array: The array to be printed
- * @size: Number of elements in @array
+ * @array: The array to be sorted
+ * @size: Size of @array
  */
 void quick_sort(int *array, size_t size)
 {
