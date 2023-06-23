@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * counting_sort - sorts an array of integers in
+ * counting_sort - Sorts an array of integers in
  * ascending order using the Counting sort algorithm.
  * @array: The array to be sorted
  * @size: Size of @array
