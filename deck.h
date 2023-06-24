@@ -1,11 +1,8 @@
-#ifndef _DECK_H
-#define _DECK_H
+#ifndef DECK_H
+#define DECK_H
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
-#define TOTAL 52
 
 typedef enum kind_e
 {
@@ -42,6 +39,9 @@ typedef struct deck_node_s
 	struct deck_node_s *next;
 } deck_node_t;
 
+int _strcmp(const char *s1, const char *s2);
+size_t deck_len(deck_node_t *list);
+int card_value(deck_node_t *node);
 void sort_deck(deck_node_t **deck);
 
-#endif /*_DECK_H*/
+#endif /* DECK_H */
