@@ -10,7 +10,7 @@ void sort_deck(deck_node_t **deck)
 	size_t len;
 	deck_node_t *one, *two, *three, *four;
 
-	len = list_len_deck(*deck);
+	len = deck_len(*deck);
 
 	if (!deck || !*deck || len < 2)
 		return;
@@ -86,9 +86,7 @@ int _strcmp(const char *s1, const char *s2)
 	while (*s1 == *s2)
 	{
 		if (*s1 == '\0')
-		{
 			return (0);
-		}
 		s1++;
 		s2++;
 	}
@@ -96,11 +94,11 @@ int _strcmp(const char *s1, const char *s2)
 }
 
 /**
- * list_len_deck - Gets the length of a deck.
+ * deck_len - Gets the length of a deck.
  * @list: The deck to get the length of
  * Return: The length of the deck
  */
-size_t list_len_deck(deck_node_t *list)
+size_t deck_len(deck_node_t *list)
 {
 	size_t len = 0;
 	while (list)

@@ -50,6 +50,6 @@ typedef struct deck_node_s
 void sort_deck(deck_node_t **deck);
 int card_value(deck_node_t *node);
 int _strcmp(const char *s1, const char *s2);
-size_t list_len_deck(deck_node_t *list);
+size_t deck_len(deck_node_t *list);
 
 #endif /* DECK_H */
