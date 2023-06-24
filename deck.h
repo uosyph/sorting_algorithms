@@ -39,9 +39,9 @@ typedef struct deck_node_s
 	struct deck_node_s *next;
 } deck_node_t;
 
-int _strcmp(const char *s1, const char *s2);
-size_t deck_len(deck_node_t *list);
-int card_value(deck_node_t *node);
 void sort_deck(deck_node_t **deck);
+int card_value(deck_node_t *node);
+int _strcmp(const char *s1, const char *s2);
+size_t list_len_deck(deck_node_t *list);
 
 #endif /* DECK_H */
