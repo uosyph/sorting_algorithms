@@ -9,6 +9,7 @@
 void print_parts(int *array, size_t min, size_t max)
 {
 	size_t i;
+
 	i = min;
 	while (i < max)
 	{

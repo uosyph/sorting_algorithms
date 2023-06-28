@@ -9,8 +9,8 @@
 int max_num(int *array, size_t size)
 {
 	unsigned int i = 0;
-
 	int max = 0;
+
 	while (i < size)
 	{
 		if (array[i] > (int)max)
@@ -36,28 +36,24 @@ void count_sort(int *array, size_t size, int pow)
 	copy = malloc(size * sizeof(int));
 	if (copy == NULL)
 		return;
-
 	i = 0;
 	while (i < 10)
 	{
 		counting[i] = 0;
 		i++;
 	}
-
 	i = 0;
 	while (i < size)
 	{
 		counting[(array[i] / pow) % 10]++;
 		i++;
 	}
-
 	i = 1;
 	while (i < 10)
 	{
 		counting[i] += counting[i - 1];
 		i++;
 	}
-
 	i = size - 1;
 	while ((int)i >= 0)
 	{
@@ -66,14 +62,12 @@ void count_sort(int *array, size_t size, int pow)
 		counting[tmp]--;
 		i--;
 	}
-
 	i = 0;
 	while (i < size)
 	{
 		array[i] = copy[i];
 		i++;
 	}
-
 	free(copy);
 }
 

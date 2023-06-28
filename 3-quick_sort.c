@@ -52,6 +52,7 @@ int partition(int *array, int low, int high, size_t size)
 void sorting(int *array, int low, int high, size_t size)
 {
 	int part;
+
 	if (low < high)
 	{
 		part = partition(array, low, high, size);

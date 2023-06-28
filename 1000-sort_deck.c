@@ -101,6 +101,7 @@ int _strcmp(const char *s1, const char *s2)
 size_t deck_len(deck_node_t *list)
 {
 	size_t len = 0;
+
 	while (list)
 	{
 		len++;
